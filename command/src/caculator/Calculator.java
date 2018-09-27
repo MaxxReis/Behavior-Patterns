@@ -1,9 +1,5 @@
 package caculator;
 
-import interfaces.ICommand;
-import java.util.ArrayList;
-import java.util.Stack;
-
 public class Calculator {
     private double value;
     
