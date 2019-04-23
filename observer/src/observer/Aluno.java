@@ -3,14 +3,13 @@ package observer;
 import interfaces.IObserver;
 import interfaces.Subject;
 
-public class Observer1 implements IObserver{
-    private String state;
+public class Aluno implements IObserver{
+//    private String state;
     
     @Override
-    public void Update(Subject subject) {
+    public void update(Subject subject) {
         try {
-            state = subject.getState();
-            System.out.println("Observer 1: " + state);
+            System.out.println("Aluno: " + subject.getState());
         } catch (Exception ex) {
             System.err.println("Fail to get subject state: " + ex.getMessage());
         }

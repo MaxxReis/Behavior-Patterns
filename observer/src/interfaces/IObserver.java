@@ -1,5 +1,5 @@
 package interfaces;
 
 public interface IObserver {
-    public void Update(Subject subject);
+    public void update(Subject subject);
 }

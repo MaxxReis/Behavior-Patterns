@@ -1,8 +1,9 @@
 package subject;
 
+import interfaces.IObserver;
 import interfaces.Subject;
 
-public class News extends Subject{
+public class Professor extends Subject{
     private String subjectState;
     
     @Override
@@ -13,6 +14,11 @@ public class News extends Subject{
     @Override
     public void setState(String state) {
         subjectState = state;
-        notifyObserver("News");
+//        notifyObserver(this.getState());
+    }
+    
+    @Override
+    public void update() {
+        
     }
 }

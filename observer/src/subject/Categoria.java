@@ -2,7 +2,7 @@ package subject;
 
 import interfaces.Subject;
 
-public class Music extends Subject{
+public class Categoria extends Subject{
     private String subjectState;
     
     @Override
@@ -13,6 +13,12 @@ public class Music extends Subject{
     @Override
     public void setState(String state) {
         subjectState = state;
-        notifyObserver("Music");
+//        notifyObserver(this.getState());
     }
+
+    @Override
+    public void update() {
+        System.out.println("Update: "+ this.getState());;
+    }
+
 }
